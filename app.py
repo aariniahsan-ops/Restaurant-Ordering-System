@@ -1,10 +1,10 @@
 import streamlit as st
 total = 0
 st.title("Restaurant")
-prices={"Pizza🍕":8,"Pasta🍝":7,"Burger🍔":6,"Sandwich🥪":5,"Soup":4}
+prices={"Pizza🍕":8,"Pasta🍝":7,"Burger🍔":6,"Sandwich🥪":5,"Soup🍲":4}
 name=st.text_input("What is the name of the order")
 phone=st.text_input("Please enter your phone number")
-food=st.radio("Choose your favorite food",["Pizza🍕","Pasta🍝","Burger🍔","Sandwich🥪","Soup"])
+food=st.radio("Choose your favorite food",["Pizza🍕","Pasta🍝","Burger🍔","Sandwich🥪","Soup🍲"])
 quantity=st.number_input("Enter the amount of items")
 pay=st.radio("Cash or Card?",["Cash💵","Card💳"])
 st.write(quantity)
